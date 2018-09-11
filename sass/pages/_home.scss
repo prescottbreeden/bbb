@@ -16,6 +16,7 @@ body {
   left: 10%;
 	font-family:'Zapfino';
 	font-size:69.6767px;
+	height: 33%;
 }
 
 #brittany path {
@@ -40,6 +41,7 @@ body {
   right: 10%;
 	font-family:'Zapfino';
 	font-size:69.6767px;
+	height: 33%;
 }
 
 #boulding path {
@@ -68,9 +70,11 @@ body {
 	right: 0;
 	margin: auto;
 	fill: #333;
+	height: 80%;
 }
 
 .header {
+	border: 2px dashed red;
 	height: 100vh;
 	width: 100%;
 	// background-image: url('../B-9870.jpg');

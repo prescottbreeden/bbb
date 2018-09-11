@@ -23,7 +23,8 @@ body {
   top: 0;
   left: 10%;
   font-family: 'Zapfino';
-  font-size: 69.6767px; }
+  font-size: 69.6767px;
+  height: 33%; }
 
 #brittany path {
   fill: #333;
@@ -44,7 +45,8 @@ body {
   bottom: 0;
   right: 10%;
   font-family: 'Zapfino';
-  font-size: 69.6767px; }
+  font-size: 69.6767px;
+  height: 33%; }
 
 #boulding path {
   fill: #333;
@@ -69,9 +71,11 @@ body {
   left: 0;
   right: 0;
   margin: auto;
-  fill: #333; }
+  fill: #333;
+  height: 80%; }
 
 .header {
+  border: 2px dashed red;
   height: 100vh;
   width: 100%;
   background-color: white;
