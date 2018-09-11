@@ -1,7 +1,58 @@
-body {
-	overflow: hidden;
-}
 
 #cid {
 
+}
+
+body {
+  //background: #444;
+}
+
+svg {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+svg circle {
+  fill: none;
+
+}
+
+svg path {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+  stroke-dasharray: 480;
+  stroke-dashoffset: 480;
+  //opacity: 0;
+  animation: letters-outline 5s infinite forwards;
+}
+
+@keyframes circle-outline {
+  from {
+    stroke-dashoffset: 800;
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes letters-outline {
+  0% {
+    stroke-dashoffset: 480;
+  }
+  75% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+
+  }
 }
