@@ -46,8 +46,9 @@ body {
   font-family: 'Zapfino';
   font-size: 69.6767px; }
 
-#boulding text {
+#boulding #text {
   fill: #333;
+  font-family: 'Zapfino';
   opacity: 0;
   animation: letters-outline 3s forwards; }
 
@@ -60,6 +61,9 @@ body {
   stroke: #333;
   stroke-width: 2;
   stroke-miterlimit: 10; }
+
+#bb_logo {
+  fill: #333; }
 
 .header {
   height: 100vh;
