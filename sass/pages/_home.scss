@@ -1,28 +1,23 @@
-
-#cid {
-
+html {
+	box-sizing: border-box;
 }
 
 body {
-  //background: #444;
+	box-sizing: inherit;
+  background: #eee;
+	padding: 1.5rem;
+	width: 100%;
 }
 
 #brittany {
-  width: 50%;
+  width: 50rem;
   position: absolute;
   top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  left: 10%;
 }
 
 #brittany path {
-  fill: black;
-  stroke: none;
-  // stroke-width: 2px;
-  // stroke-dasharray: 1057;
-  // stroke-dashoffset: 1057;
+  fill: #333;
   opacity: 0;
   animation: letters-outline 3s forwards;
 }
@@ -31,8 +26,21 @@ body {
 	stroke-dasharray: 330;
 	stroke-dashoffset: 330;
   animation: line-stroke 3s forwards;
+	stroke: #333;
+	stroke-width: 2;
+	stroke-miterlimit: 10;
 }
 
+.header {
+	height: 100vh;
+	width: 100%;
+	// background-image: url('../B-9870.jpg');
+	background-color: white;
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
 
 @keyframes letters-outline {
   from {
