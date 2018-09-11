@@ -18,7 +18,7 @@ body {
 	font-size:69.6767px;
 }
 
-#brittany text {
+#brittany path {
   fill: #333;
   opacity: 0;
   animation: letters-outline 3s forwards;
@@ -42,7 +42,7 @@ body {
 	font-size:69.6767px;
 }
 
-#boulding #text {
+#boulding path {
   fill: #333;
 	font-family:'Zapfino';
   opacity: 0;
@@ -52,17 +52,24 @@ body {
 #boulding line {
 	transform-origin: center;
 	transform: rotate(180deg);
-	stroke-dasharray: 330;
-	stroke-dashoffset: 330;
-  animation: line-stroke 3s forwards;
+	stroke-dasharray: 460;
+	stroke-dashoffset: 460;
+  animation: boulding-line-stroke 5s forwards;
 	stroke: #333;
 	stroke-width: 2;
 	stroke-miterlimit: 10;
 }
 
 #bb_logo {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
 	fill: #333;
 }
+
 .header {
 	height: 100vh;
 	width: 100%;
@@ -87,6 +94,17 @@ body {
 	from {
 		opacity: 0;
 		stroke-dashoffset: 330
+	}
+	to {
+		opacity: 1;
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes boulding-line-stroke {
+	from {
+		opacity: 0;
+		stroke-dashoffset: 460
 	}
 	to {
 		opacity: 1;
