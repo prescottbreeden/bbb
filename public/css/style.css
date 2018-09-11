@@ -8,7 +8,7 @@ html {
 html {
   font-family: 'Open Sans', sans-serif; }
 
-svg {
+#brittany {
   width: 50%;
   position: absolute;
   top: 0;
@@ -17,30 +17,27 @@ svg {
   right: 0;
   margin: auto; }
 
-svg circle {
-  fill: none; }
+#brittany path {
+  fill: black;
+  stroke: none;
+  opacity: 0;
+  animation: letters-outline 3s forwards; }
 
-svg path {
-  fill: none;
-  stroke: #000;
-  stroke-width: 2px;
-  stroke-dasharray: 480;
-  stroke-dashoffset: 480;
-  animation: letters-outline 5s infinite forwards; }
-
-@keyframes circle-outline {
-  from {
-    stroke-dashoffset: 800;
-    opacity: 0; }
-  to {
-    stroke-dashoffset: 0;
-    opacity: 1; } }
+#brittany line {
+  stroke-dasharray: 330;
+  stroke-dashoffset: 330;
+  animation: line-stroke 3s forwards; }
 
 @keyframes letters-outline {
-  0% {
-    stroke-dashoffset: 480; }
-  75% {
-    stroke-dashoffset: 0; }
-  100% {
-    stroke-dashoffset: 0;
+  from {
+    opacity: 0; }
+  to {
     opacity: 1; } }
+
+@keyframes line-stroke {
+  from {
+    opacity: 0;
+    stroke-dashoffset: 330; }
+  to {
+    opacity: 1;
+    stroke-dashoffset: 0; } }
